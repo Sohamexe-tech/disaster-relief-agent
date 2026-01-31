@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🌍 Disaster Monitoring Dashboard</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.css" />
+<script src="https://cdn.jsdelivr.net/npm/leaflet/dist/leaflet.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body { font-family: 'Segoe UI', sans-serif; background: #eef2f3; margin: 0; padding: 0 20px; }
+header { background: linear-gradient(90deg, #1e3c72, #2a5298); color: white; text-align: center; padding: 20px; border-radius: 0 0 20px 20px; margin-bottom: 20px; }
+h2, h3 { margin-top: 20px; }
+.card { border-radius: 10px; padding: 15px; margin: 10px 0; background: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.news { border-left: 6px solid #2a9d8f; }
+.ai { border-left: 6px solid #6a4c93; }
+.incident { border-left: 6px solid #e63946; }
+.analysis { border-left: 6px solid #f4a261; }
+.badge-urgency { font-size: 12px; margin-left: 10px; }
+#error { color: red; font-weight: bold; text-align: center; }
+#map { height: 450px; width: 100%; margin-top: 20px; border-radius: 10px; }
+form input { padding: 10px 15px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc; width: 300px; }
+form button { padding: 10px 20px; font-size: 16px; border-radius: 5px; border: none; background: #1e3c72; color: white; }
+form button:hover { background: #16305c; cursor: pointer; }
+a { text-decoration: none; color: #1e3c72; }
+a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<header>
+    <h1>🌍 Disaster Monitoring Dashboard</h1>
+    <p>From chaos → AI → Action</p>
+</header>
+
+<div class="container">
+<form method="post" class="d-flex justify-content-center mb-4">
+    <input type="text" name="city_or_url" placeholder="Enter city name or news URL" required>
+    <button type="submit">Analyze</button>
+</form>
+
+{% if error %}
+<p id="error">{{ error }}</p>
+{% endif %}
+
+{% if city_or_url %}
+<h2>📍 Input: {{ city_or_url }}</h2>
+
+{% if news_analysis %}
+<h3>📰 News URL Fact-Check</h3>
+<div class="card analysis">
+    <strong>Title:</strong> {{ news_analysis.title }}<br>
+    <strong>Fact Check:</strong>
+    {% if news_analysis.status == 'true' %}
+        <span style="color:green;font-weight:bold;">TRUE ✅</span>
+    {% elif news_analysis.status == 'false' %}
+        <span style="color:red;font-weight:bold;">FALSE ❌</span>
+    {% else %}
+        <span style="color:orange;font-weight:bold;">UNKNOWN ⚠️</span>
+    {% endif %}
+</div>
+{% else %}
+
+<h3>📰 Real News Signals</h3>
+{% if real_news %}
+    {% for n in real_news %}
+        <div class="card news"><a href="{{ n.link }}" target="_blank">{{ n.title }}</a></div>
+    {% endfor %}
+{% else %}
+<p>No real news found for this city.</p>
+{% endif %}
+
+<h3>🤖 AI-Generated Emergency Reports</h3>
+{% if ai_reports %}
+    {% for report in ai_reports %}
+        <div class="card ai">{{ report }}</div>
+    {% endfor %}
+{% else %}
+<p>No AI reports available for this city.</p>
+{% endif %}
+
+<h3>🚨 Verified Actionable Incidents</h3>
+{% if incidents %}
+    {% for inc in incidents %}
+        <div class="card incident">
+            <strong>Type:</strong> {{ inc.need_type | upper }}
+            <span class="badge bg-danger badge-urgency">Urgency: {{ inc.urgency }}/5</span><br>
+            <strong>Summary:</strong> {{ inc.summary }}<br>
+            <strong>Verified by:</strong> {{ inc.report_count }} reports
+        </div>
+    {% endfor %}
+{% else %}
+<p>No actionable incidents found.</p>
+{% endif %}
+
+{% if lat and lon %}
+<h3>🗺 Map</h3>
+<div id="map"></div>
+<script>
+var map = L.map('map').setView([{{ lat }}, {{ lon }}], 12);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+L.marker([{{ lat }}, {{ lon }}]).addTo(map)
+    .bindPopup('<b>{{ city_or_url }}</b>')
+    .openPopup();
+
+{% for inc in incidents %}
+    {% if inc.location %}
+    L.marker([{{ lat }}, {{ lon }}]).addTo(map)
+        .bindPopup('<b>{{ inc.need_type | upper }}</b><br>{{ inc.summary }}<br>Urgency: {{ inc.urgency }}/5');
+    {% endif %}
+{% endfor %}
+</script>
+{% endif %}
+
+{% endif %}
+{% endif %}
+</div>
+</body>
+</html>

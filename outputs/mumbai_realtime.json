@@ -1,0 +1,136 @@
+{
+  "city": "Mumbai",
+  "timestamp": "2026-01-17T15:28:21.665259",
+  "data_sources": {
+    "real_news": 0,
+    "ai_generated": 10,
+    "total": 10
+  },
+  "analysis": {
+    "total_incidents": 10,
+    "high_urgency": 9,
+    "high_confidence": 0
+  },
+  "incidents": [
+    {
+      "id": "INC_7CB04DDF",
+      "type": "rescue",
+      "location": "Lower Parel area, Mumbai",
+      "urgency": 4,
+      "summary": "Flooding due to heavy rainfall",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "google_news"
+      ]
+    },
+    {
+      "id": "INC_171873CE",
+      "type": "rescue",
+      "location": "Andheri East, near Andheri Railway Station",
+      "urgency": 5,
+      "summary": "Major fire incident with nearby residents evacuated",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "twitter"
+      ]
+    },
+    {
+      "id": "INC_30EB4309",
+      "type": "other",
+      "location": "Mumbai",
+      "urgency": 5,
+      "summary": "EMERGENCY ALERT: 6.5 magnitude earthquake hits Mumbai, epicenter near Palghar, residents in Worli and Bandra report strong tremors, no casualties repo",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "facebook"
+      ]
+    },
+    {
+      "id": "INC_5E10AF3D",
+      "type": "rescue",
+      "location": "Mumbai's Western Ghats near Borivali National Park",
+      "urgency": 4,
+      "summary": "Landslide blocking Malad-Marve Road",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "whatsapp"
+      ]
+    },
+    {
+      "id": "INC_B3A2C567",
+      "type": "rescue",
+      "location": "Kandivali West",
+      "urgency": 5,
+      "summary": "Gas leak in residential building",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "reddit"
+      ]
+    },
+    {
+      "id": "INC_2ADC89C6",
+      "type": "medical",
+      "location": "Dharavi, Mumbai",
+      "urgency": 4,
+      "summary": "Malaria outbreak with 10 confirmed cases",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "INC_FAC6AF20",
+      "type": "rescue",
+      "location": "Mumbai's Goregaon West",
+      "urgency": 5,
+      "summary": "Building collapse with 5 injured, rescue operations needed",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "google_news"
+      ]
+    },
+    {
+      "id": "INC_9D483E1F",
+      "type": "rescue",
+      "location": "Mumbai's Eastern Express Highway near Chembur",
+      "urgency": 4,
+      "summary": "Major accident involving 3 vehicles, traffic jam",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "twitter"
+      ]
+    },
+    {
+      "id": "INC_E0FE5D82",
+      "type": "water",
+      "location": "Mumbai's Powai area",
+      "urgency": 4,
+      "summary": "Water contamination reported with foul smell and taste",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "facebook"
+      ]
+    },
+    {
+      "id": "INC_759DCBF5",
+      "type": "rescue",
+      "location": "Mumbai",
+      "urgency": 3,
+      "summary": "TRAIN DERAILMENT: Local train derails near Mumbai's CST station, 10 passengers injured, services suspended on the Harbour Line, rescue operations in p",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "whatsapp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-01-21T21:13:47.002889",
+  "total_reports": 20,
+  "unique_incidents": 12,
+  "deduplication_rate": "40.0%",
+  "incidents": [
+    {
+      "id": "INC_B286560D",
+      "type": "medical",
+      "location": "Bandra West",
+      "urgency": 5,
+      "summary": "Elderly diabetic needs insulin",
+      "confidence": "100.0%",
+      "report_count": 3,
+      "sources": [
+        "facebook",
+        "twitter",
+        "instagram"
+      ]
+    },
+    {
+      "id": "INC_53713723",
+      "type": "rescue",
+      "location": "Borivali Phoenix Mall, 3rd floor",
+      "urgency": 5,
+      "summary": "50 people trapped due to fire",
+      "confidence": "100.0%",
+      "report_count": 3,
+      "sources": [
+        "reddit",
+        "twitter",
+        "instagram"
+      ]
+    },
+    {
+      "id": "INC_0D448623",
+      "type": "food",
+      "location": "Andheri East",
+      "urgency": 5,
+      "summary": "50 families affected by floods",
+      "confidence": "90.0%",
+      "report_count": 2,
+      "sources": [
+        "whatsapp",
+        "twitter"
+      ]
+    },
+    {
+      "id": "INC_B7138028",
+      "type": "shelter",
+      "location": "Kurla station",
+      "urgency": 5,
+      "summary": "30 people displaced, need shelter immediately",
+      "confidence": "90.0%",
+      "report_count": 2,
+      "sources": [
+        "whatsapp",
+        "instagram"
+      ]
+    },
+    {
+      "id": "INC_B08FD347",
+      "type": "rescue",
+      "location": "Worli",
+      "urgency": 5,
+      "summary": "Gas leak evacuation",
+      "confidence": "90.0%",
+      "report_count": 2,
+      "sources": [
+        "whatsapp",
+        "twitter"
+      ]
+    },
+    {
+      "id": "INC_B8062EAF",
+      "type": "shelter",
+      "location": "Colaba",
+      "urgency": 5,
+      "summary": "100+ families homeless due to cyclone",
+      "confidence": "90.0%",
+      "report_count": 2,
+      "sources": [
+        "reddit",
+        "whatsapp"
+      ]
+    },
+    {
+      "id": "INC_54A1C435",
+      "type": "food",
+      "location": "Andheri East",
+      "urgency": 4,
+      "summary": "Emergency food supplies for 50 stranded families",
+      "confidence": "60.0%",
+      "report_count": 1,
+      "sources": [
+        "facebook"
+      ]
+    },
+    {
+      "id": "INC_46293241",
+      "type": "food",
+      "location": "Andheri East, Mumbai",
+      "urgency": 5,
+      "summary": "50 families in need of immediate food assistance",
+      "confidence": "60.0%",
+      "report_count": 1,
+      "sources": [
+        "reddit"
+      ]
+    },
+    {
+      "id": "INC_EA7EC078",
+      "type": "shelter",
+      "location": "Kurla station",
+      "urgency": 5,
+      "summary": "30 individuals homeless after collapse",
+      "confidence": "60.0%",
+      "report_count": 1,
+      "sources": [
+        "reddit"
+      ]
+    },
+    {
+      "id": "INC_A88434DD",
+      "type": "shelter",
+      "location": "Worli",
+      "urgency": 4,
+      "summary": "200 people displaced due to gas leak",
+      "confidence": "60.0%",
+      "report_count": 1,
+      "sources": [
+        "facebook"
+      ]
+    },
+    {
+      "id": "INC_6B67E5C0",
+      "type": "food",
+      "location": "Colaba",
+      "urgency": 2,
+      "summary": "Cyclone Biparjoy hits Colaba. 100 families without shelter or food.",
+      "confidence": "60.0%",
+      "report_count": 1,
+      "sources": [
+        "facebook"
+      ]
+    },
+    {
+      "id": "INC_6272B344",
+      "type": "rescue",
+      "location": "Andheri station",
+      "urgency": 5,
+      "summary": "Bridge collapse with multiple vehicles trapped",
+      "confidence": "60.0%",
+      "report_count": 1,
+      "sources": [
+        "instagram"
+      ]
+    }
+  ]
+}

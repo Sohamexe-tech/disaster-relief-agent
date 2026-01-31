@@ -1,0 +1,136 @@
+{
+  "city": "delhi",
+  "timestamp": "2026-01-21T21:14:07.340918",
+  "data_sources": {
+    "real_news": 0,
+    "ai_generated": 10,
+    "total": 10
+  },
+  "analysis": {
+    "total_incidents": 10,
+    "high_urgency": 7,
+    "high_confidence": 0
+  },
+  "incidents": [
+    {
+      "id": "INC_F69FCD21",
+      "type": "other",
+      "location": "delhi",
+      "urgency": 3,
+      "summary": "BREAKING: 6.5 magnitude earthquake hits Delhi, epicenter near Hauz Khas, multiple buildings damaged and power outages reported across the city.",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "google_news"
+      ]
+    },
+    {
+      "id": "INC_954DAB8F",
+      "type": "rescue",
+      "location": "East Delhi",
+      "urgency": 5,
+      "summary": "Evacuation needed due to flood",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "twitter"
+      ]
+    },
+    {
+      "id": "INC_723E3FA9",
+      "type": "rescue",
+      "location": "Connaught Place",
+      "urgency": 5,
+      "summary": "Major fire in commercial building",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "facebook"
+      ]
+    },
+    {
+      "id": "INC_0B0531D3",
+      "type": "medical",
+      "location": "Safdarjung area, South Delhi",
+      "urgency": 4,
+      "summary": "Dengue fever outbreak with 20 cases admitted",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "whatsapp"
+      ]
+    },
+    {
+      "id": "INC_3BCD5261",
+      "type": "rescue",
+      "location": "Karol Bagh",
+      "urgency": 5,
+      "summary": "Building collapse with people trapped",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "reddit"
+      ]
+    },
+    {
+      "id": "INC_AD057C06",
+      "type": "rescue",
+      "location": "Rohini Sector 16",
+      "urgency": 5,
+      "summary": "LPG pipeline leak, residents evacuated",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "instagram"
+      ]
+    },
+    {
+      "id": "INC_DB977410",
+      "type": "rescue",
+      "location": "NH48 near IGI Airport",
+      "urgency": 4,
+      "summary": "Multi-vehicle pileup causing traffic jam",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "google_news"
+      ]
+    },
+    {
+      "id": "INC_9023AD8A",
+      "type": "rescue",
+      "location": "Tughlaqabad area",
+      "urgency": 4,
+      "summary": "Landslide due to heavy rainfall",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "twitter"
+      ]
+    },
+    {
+      "id": "INC_E5A4DD4D",
+      "type": "rescue",
+      "location": "Rajouri Garden",
+      "urgency": 3,
+      "summary": "Waterlogging due to heavy rainfall, traffic disrupted",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "facebook"
+      ]
+    },
+    {
+      "id": "INC_8404D807",
+      "type": "rescue",
+      "location": "delhi",
+      "urgency": 3,
+      "summary": "EXPLOSION: Gas cylinder explosion reported in a residential area of Dwarka Sector 12, 5 injured, fire department rushed to the spot to douse the flame",
+      "confidence": "60%",
+      "verified_by": 1,
+      "sources": [
+        "whatsapp"
+      ]
+    }
+  ]
+}
