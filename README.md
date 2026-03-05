@@ -1,4 +1,4 @@
-# 🌍 Disaster Relief Resource Scout
+<img width="1829" height="935" alt="Screenshot 2026-01-21 212546" src="https://github.com/user-attachments/assets/5c681340-9571-45f5-bac5-2ba43341e3ed" /># 🌍 Disaster Relief Resource Scout
 
 > **From Chaos → AI → Action**  
 > An agentic AI system that monitors disasters in real-time, eliminates duplicate reports, and surfaces verified, actionable emergency incidents using semantic clustering and multi-source cross-referencing.
