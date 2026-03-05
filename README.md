@@ -1,9 +1,4 @@
-<img width="1829" height="935" alt="Screenshot 2026-01-21 212546" src="https://github.com/user-attachments/assets/5c681340-9571-45f5-bac5-2ba43341e3ed" /># 🌍 Disaster Relief Resource Scout
 
-> **From Chaos → AI → Action**  
-> An agentic AI system that monitors disasters in real-time, eliminates duplicate reports, and surfaces verified, actionable emergency incidents using semantic clustering and multi-source cross-referencing.
-
----
 
 ## 📋 Table of Contents
 
@@ -311,7 +306,8 @@ The Flask web app provides a visual interface:
 ### 🌐 Disaster Monitoring Dashboard — City Search
 > Enter any city name to pull real news signals, AI-generated reports, and verified incidents.
 
-![Uploading Screenshot 2026-01-17 163606.png…]()
+<img width="1858" height="961" alt="Screenshot 2026-01-17 163901" src="https://github.com/user-attachments/assets/b91fd88a-af17-4619-b645-918665289016" />
+
 
 ---
 
