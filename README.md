@@ -340,7 +340,7 @@ The Flask web app provides a visual interface:
 
 ---
 
-> 💡 **To add screenshots to your repo**, create a `screenshots/` folder and rename/copy your images as shown above.
+
 
 ---
 
