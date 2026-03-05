@@ -311,35 +311,36 @@ The Flask web app provides a visual interface:
 ### 🌐 Disaster Monitoring Dashboard — City Search
 > Enter any city name to pull real news signals, AI-generated reports, and verified incidents.
 
-![Disaster Monitoring Dashboard](screenshots/dashboard_city_search.png)
+![Uploading Screenshot 2026-01-17 163606.png…]()
 
 ---
 
 ### 📰 Real News Signals (Live)
 > Real headlines fetched from Google News RSS — bomb threats, water disruptions, air quality emergencies, and more.
 
-![Real News Signals](screenshots/real_news_signals.png)
+<img width="1858" height="961" alt="Screenshot 2026-01-17 163901" src="https://github.com/user-attachments/assets/f28534ec-b1b6-4ed5-b1d9-63d6e71717df" />
 
 ---
 
 ### 🚨 Verified Actionable Incidents (Web UI)
 > Incident cards color-coded by urgency with a full-width red bar indicating severity level (Urgency: 4/5, 5/5).
+<img width="1877" height="972" alt="Screenshot 2026-01-21 212510" src="https://github.com/user-attachments/assets/df0e3429-cb22-41fc-a59a-36bbf9b2725b" />
 
-![Verified Incidents UI](screenshots/verified_incidents_ui.png)
 
 ---
 
 ### 🗺️ Interactive Map View
 > Geocoded incident pins on a Leaflet + OpenStreetMap map. Click any marker to see incident type, summary, and urgency.
+<img width="1829" height="935" alt="Screenshot 2026-01-21 212546" src="https://github.com/user-attachments/assets/8ee0980e-c25b-4267-89fc-0ee53aaaad36" />
 
-![Interactive Map](screenshots/map_view.png)
 
 ---
 
 ### 💻 CLI Terminal Output
 > Full terminal pipeline: incident IDs, type, location, urgency visualization (🔴 dots), corroboration count, and confidence score.
 
-![CLI Output](screenshots/cli_output.png)
+<img width="1430" height="1083" alt="Screenshot 2026-01-17 164029" src="https://github.com/user-attachments/assets/9004565d-65fa-40f1-8100-9d1f9cb430c4" />
+
 
 ---
 
