@@ -345,6 +345,7 @@ The Flask web app provides a visual interface:
 ---
 
 ## Authors
+Soham Dalvi
 
 Built for **Disaster Relief Hackathon 2026** 🏆
 
@@ -352,6 +353,3 @@ Built for **Disaster Relief Hackathon 2026** 🏆
 
 ---
 
-## License
-
-MIT License — feel free to use, modify, and distribute.
